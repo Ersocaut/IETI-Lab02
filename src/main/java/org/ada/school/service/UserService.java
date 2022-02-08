@@ -1,6 +1,6 @@
 package org.ada.school.service;
 
-import org.ada.school.dto.UserDto;
+import org.ada.school.dto.*;
 import org.ada.school.model.User;
 
 import java.util.List;
