@@ -33,7 +33,7 @@ public class UserServiceHashMap implements UserService
     }
 
     @Override
-    public List<User> all()
+    public List<User> getAll()
     {
         return new ArrayList<>( usersMap.values() );
     }

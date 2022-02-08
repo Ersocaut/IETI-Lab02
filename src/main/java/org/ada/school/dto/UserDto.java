@@ -8,8 +8,10 @@ public class UserDto
 
     String lastName;
 
-    public UserDto()
-    {
+    public UserDto(String name, String lastName, String email){
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
     }
 
     public String getName()

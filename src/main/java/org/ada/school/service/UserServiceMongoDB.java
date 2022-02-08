@@ -17,7 +17,7 @@ public class UserServiceMongoDB implements UserService{
     }
 
     @Override
-    public List<User> all() {
+    public List<User> getAll() {
         return null;
     }
 
