@@ -20,25 +20,32 @@ public class UserServiceMongoDB implements UserService{
     @Override
     public User create(User user) {
         userRepository.save(user);
+        return user;
     }
 
     @Override
-    public User findById(String id) {
-        return null;
+    public User findById(String id){
+        return userRepository.findById(id).get();
     }
 
     @Override
     public List<User> getAll() {
-        return null;
+        return userRepository.findAll();
     }
 
     @Override
     public boolean deleteById(String id) {
-        return false;
+        userRepository.deleteById(id);
+        if (userRepository.findById(id) != null){
+            return false;
+        }
+        return true;
     }
 
     @Override
     public User update(UserDto userDto, String id) {
-        return null;
+        User ch = findById(id);
+        ch.update(userDto);
+        return userRepository.save(ch);
     }
 }

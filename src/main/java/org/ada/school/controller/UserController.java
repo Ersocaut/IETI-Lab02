@@ -1,6 +1,6 @@
 package org.ada.school.controller;
 
-import org.ada.school.dto.*;
+import org.ada.school.dto.UserDto;
 import org.ada.school.model.User;
 import org.ada.school.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package org.ada.school.model;
 
-import org.ada.school.dto.*;
+import org.ada.school.dto.UserDto;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -23,6 +23,8 @@ public class User {
 
     String createdAt;
 
+
+    public User(){}
 
     public User( UserDto userDto ) {
         id = UUID.randomUUID().toString();
